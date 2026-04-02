@@ -1,11 +1,13 @@
 'use client'
 
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import { Button } from "./Button";
+import { ValorContadorGlobal } from "./ValorContadorGlobal";
+import { ContadorContext } from "@/context/ContadorContext";
 
 export const Contador = () => {
     
-    const [contador, setContador] = useState(0);
+    const {contador, setContador} = useContext(ContadorContext)
     const [coisa, setCoisa] = useState("")
 
     useEffect(()=>{
@@ -15,7 +17,7 @@ export const Contador = () => {
     return (
         <div>
             <h2 className="text-2xl">Contador</h2>
-            <p>Número atual: {contador}</p>
+            <ValorContadorGlobal/>
             <div className="mt-2 flex gap-3 flex-wrap">
                 <Button
                     onClick={() => {

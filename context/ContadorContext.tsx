@@ -23,7 +23,7 @@ export default function ContadorProvider({children}: {children: ReactNode }){
     }, []);
 
     useEffect(() => {
-        if(contador){
+        if(contador !== null){
             localStorage.setItem('contador', contador.toString())
         }
     }, [contador])

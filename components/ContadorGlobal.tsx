@@ -14,20 +14,20 @@ export const ContadorGlobal = () => {
             <div className="mt-2 flex gap-3 flex-wrap">
                 <Button
                     onClick={() => {
-                        setContador((c) => c-3)
+                        setContador((c) => (c ?? 0)-3)
                     }}>-3</Button>
                 <Button 
                     onClick={() => {
-                        setContador((c) => c-1)
+                        setContador((c) => (c ?? 0)-1)
                     }}>-1</Button>
                 <Button 
                     onClick={() => {
-                        setContador((c) => c+1)
+                        setContador((c) => (c ?? 0)+1)
                     }}>+1</Button>
 
                 <Button 
                     onClick={() => {
-                        setContador((c) => c+3)
+                        setContador((c) => (c ?? 0)+3)
                     }}>+3</Button>
             </div>
         </div>

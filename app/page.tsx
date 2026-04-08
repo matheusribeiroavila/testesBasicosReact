@@ -20,6 +20,9 @@ export default function Home() {
         <ul>
           <li className="hover:text-amber-300"><a href="http://localhost:3000/apis/client-side">APIs - Api Client-Side</a></li>
         </ul>
+        <ul>
+          <li className="hover:text-amber-300"><a href="http://localhost:3000/apis/community-libraries">APIs - Api Client-Side</a></li>
+        </ul>
       </main>
     </div>
   );
